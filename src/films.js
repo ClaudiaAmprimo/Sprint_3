@@ -16,8 +16,14 @@ getMoviesFromDirector(movies, 'Quentin Tarantino')
 
 // Exercise 3: Calculate the average of the films of a given director.
 function moviesAverageOfDirector(array, director) {
-
-}
+  let moviesFromDirector = getMoviesFromDirector(array, director)
+  let sumaScore = moviesFromDirector.reduce((total, movie) => {
+  return total + movie.score
+  },0);
+  let average = sumaScore / moviesFromDirector.length
+  return average
+};
+moviesAverageOfDirector(movies, 'Francis Ford Coppola')
 
 // Exercise 4:  Alphabetic order by title
 function orderAlphabetically(array) {
