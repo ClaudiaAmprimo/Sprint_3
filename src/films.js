@@ -21,14 +21,22 @@ function moviesAverageOfDirector(array, director) {
   return total + movie.score
   },0);
   let average = sumaScore / moviesFromDirector.length
-  return average
+  return parseFloat(average.toFixed(2))
 };
 moviesAverageOfDirector(movies, 'Francis Ford Coppola')
 
 // Exercise 4:  Alphabetic order by title
 function orderAlphabetically(array) {
-
-}
+  let moviesNew = array.slice()
+  let orderTitle = moviesNew.sort(function(a, b){
+    if(a.title < b.title) { return -1; }
+    if(a.title > b.title) { return 1; }
+    return 0;
+})
+let titles = orderTitle.map(movie => movie.title);
+  return titles.slice(0, 20);
+};
+orderAlphabetically(movies)
 
 // Exercise 5: Order by year, ascending
 function orderByYear() {
