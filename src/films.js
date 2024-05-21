@@ -87,10 +87,18 @@ return newArray
 hoursToMinutes(movies)
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear() {
-
+function bestFilmOfYear(array, year) {
+let moviesYear = array.filter(movie => movie.year === year)
+let bestFilm = moviesYear.reduce(function (a,b){
+  if (a.score > b.score){
+    return a;
+  } else {
+    return b;
+  }
+});
+return [bestFilm]
 }
-
+bestFilmOfYear(movies, 1957)
 
 
 // The following is required to make unit tests work.
