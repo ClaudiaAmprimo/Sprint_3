@@ -8,63 +8,6 @@ You will be in charge of setting up the core of the application: all the logic o
 
 <br>
 
-## Requirements
-
-
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
-```
-
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
-
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
-
-<br>
-
-## Submission
-
-1. Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
-
-2. Create Pull Request.
-
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
-
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
-## Tests!
-
-
-```shell
-$ npm install
-$ npm run test:watch
-```
-
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
-
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
-
-<br>
 
 ## Instructions
 
@@ -83,4 +26,4 @@ an array of information about 250 movies.
 
 - Don't forget to include the capture of the test results in the virtual campus.
 
-
+## To clone the repository: git clone https://github.com/ClaudiaAmprimo/sprint_3.git
